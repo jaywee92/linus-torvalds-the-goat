@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linus Torvalds — Creator of Linux &amp; Git</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@300;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SCANLINES OVERLAY -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ═══ HERO ═══ -->
+  <header class="hero">
+    <div class="hero__terminal-bar">
+      <span class="dot dot--red"></span>
+      <span class="dot dot--yellow"></span>
+      <span class="dot dot--green"></span>
+      <span class="terminal-title">torvalds@kernel.org — bash</span>
+    </div>
+
+    <div class="hero__body">
+      <p class="hero__prompt"><span class="prompt-sign">$</span> whoami<span class="cursor">▌</span></p>
+
+      <h1 class="hero__name">LINUS<br /><span class="hero__name--accent">TORVALDS</span></h1>
+
+      <div class="hero__tags">
+        <span class="tag">LINUX KERNEL</span>
+        <span class="tag">GIT</span>
+        <span class="tag">OPEN SOURCE</span>
+        <span class="tag">FINN</span>
+      </div>
+
+      <p class="hero__born">
+        <span class="label">born</span> 28.12.1969 — Helsinki, Finland<br />
+        <span class="label">est.</span> Linux 0.01 — 17.09.1991
+      </p>
+    </div>
+
+    <div class="hero__ascii" aria-hidden="true">
+<pre>
+  ██╗     ██╗███╗   ██╗██╗   ██╗██╗  ██╗
+  ██║     ██║████╗  ██║██║   ██║╚██╗██╔╝
+  ██║     ██║██╔██╗ ██║██║   ██║ ╚███╔╝
+  ██║     ██║██║╚██╗██║██║   ██║ ██╔██╗
+  ███████╗██║██║ ╚████║╚██████╔╝██╔╝ ██╗
+  ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝
+</pre>
+    </div>
+  </header>
+
+  <!-- ═══ BIO ═══ -->
+  <section class="bio">
+    <div class="section-label">
+      <span class="prompt-sign">$</span> cat bio.txt
+    </div>
+    <div class="bio__grid">
+      <div class="bio__block bio__block--highlight">
+        <p>Linus Benedict Torvalds ist finnisch-amerikanischer Software-Ingenieur und einer der einflussreichsten Programmierer aller Zeiten. 1991 begann er als Hobbyprojekt den Linux-Kernel zu schreiben — heute läuft er auf über <strong>97 % aller Supercomputer</strong>, dem Android-Ökosystem, der gesamten Cloud-Infrastruktur und Milliarden von Geräten weltweit.</p>
+      </div>
+      <div class="bio__block">
+        <p>2005 entwickelte er in zwei Wochen <strong>Git</strong>, das heute universell genutzte verteilte Versionskontrollsystem — nachdem er mit den bestehenden Tools unzufrieden war. Typisch Torvalds.</p>
+      </div>
+      <div class="bio__block">
+        <p>Er ist bekannt für seinen kompromisslosen, direkten Stil auf der Linux Kernel Mailing List und die Überzeugung, dass guter Code für sich selbst spricht. <em>"Talk is cheap. Show me the code."</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ QUOTES ═══ -->
+  <section class="quotes">
+    <div class="section-label">
+      <span class="prompt-sign">$</span> grep -i "torvalds" quotes.db
+    </div>
+
+    <div class="quotes__grid">
+
+      <article class="quote-card quote-card--large">
+        <div class="quote-card__index">01</div>
+        <blockquote>
+          <p class="quote-text">"Talk is cheap. Show me the code."</p>
+        </blockquote>
+        <div class="quote-card__meta">lkml.org · 2000</div>
+      </article>
+
+      <article class="quote-card">
+        <div class="quote-card__index">02</div>
+        <blockquote>
+          <p class="quote-text">"Software is like sex: it's better when it's free."</p>
+        </blockquote>
+        <div class="quote-card__meta">linus torvalds</div>
+      </article>
+
+      <article class="quote-card">
+        <div class="quote-card__index">03</div>
+        <blockquote>
+          <p class="quote-text">"Intelligence is the ability to avoid doing work, yet getting the work done."</p>
+        </blockquote>
+        <div class="quote-card__meta">linus torvalds</div>
+      </article>
+
+      <article class="quote-card quote-card--accent">
+        <div class="quote-card__index">04</div>
+        <blockquote>
+          <p class="quote-text">"If Microsoft ever does applications for Linux it means I've won."</p>
+        </blockquote>
+        <div class="quote-card__meta">linus torvalds · 1998</div>
+      </article>
+
+      <article class="quote-card quote-card--wide">
+        <div class="quote-card__index">05</div>
+        <blockquote>
+          <p class="quote-text">"Bad programmers worry about the code.<br />Good programmers worry about data structures and their relationships."</p>
+        </blockquote>
+        <div class="quote-card__meta">linus torvalds</div>
+      </article>
+
+      <article class="quote-card">
+        <div class="quote-card__index">06</div>
+        <blockquote>
+          <p class="quote-text">"An infinite number of monkeys typing into GNU emacs would never make a good program."</p>
+        </blockquote>
+        <div class="quote-card__meta">linux newsgroups</div>
+      </article>
+
+      <article class="quote-card">
+        <div class="quote-card__index">07</div>
+        <blockquote>
+          <p class="quote-text">"Linux is evolution, not intelligent design."</p>
+        </blockquote>
+        <div class="quote-card__meta">linus torvalds</div>
+      </article>
+
+      <article class="quote-card quote-card--dark">
+        <div class="quote-card__index">08</div>
+        <blockquote>
+          <p class="quote-text">"Most good programmers do programming not because they expect to get paid, but because it is fun to program."</p>
+        </blockquote>
+        <div class="quote-card__meta">linus torvalds</div>
+      </article>
+
+      <article class="quote-card quote-card--wide">
+        <div class="quote-card__index">09</div>
+        <blockquote>
+          <p class="quote-text">"I am not a visionary. I'm an engineer. I want to fix the pothole that is right in front of me before I fall in."</p>
+        </blockquote>
+        <div class="quote-card__meta">linus torvalds · ted talk · 2016</div>
+      </article>
+
+      <article class="quote-card">
+        <div class="quote-card__index">10</div>
+        <blockquote>
+          <p class="quote-text">"Nobody actually creates perfect code the first time around, except me."</p>
+        </blockquote>
+        <div class="quote-card__meta">linus torvalds</div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══ STATS ═══ -->
+  <section class="stats">
+    <div class="section-label">
+      <span class="prompt-sign">$</span> uname -a
+    </div>
+    <div class="stats__grid">
+      <div class="stat">
+        <span class="stat__num">35+</span>
+        <span class="stat__label">Jahre Linux</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">30M+</span>
+        <span class="stat__label">Zeilen Kernel-Code</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">97%</span>
+        <span class="stat__label">aller Supercomputer</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">1</span>
+        <span class="stat__label">Mensch hinter beiden</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <p class="footer__cmd"><span class="prompt-sign">$</span> echo "Just for fun." <span class="comment"># — Linus Torvalds, Autobiographie 2001</span></p>
+    <p class="footer__copy">© 2026 — Eine Hommage an den Mann, der das Internet zum Laufen bringt.</p>
+  </footer>
+
+</body>
+</html>
