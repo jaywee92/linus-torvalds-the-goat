@@ -556,7 +556,7 @@ body {
 }
 
 .photo-frame::before {
-  content: 'IMG_1991.jpg';
+  content: 'Linus Torvalds';
   display: block;
   background: var(--black-4);
   color: var(--amber-dim);
