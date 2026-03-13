@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linus Torvalds — Creator of Linux &amp; Git</title>
+  <title>Linus Torvalds — The GOAT of Open Source</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@300;700&display=swap" rel="stylesheet" />
@@ -20,25 +20,42 @@
       <span class="dot dot--red"></span>
       <span class="dot dot--yellow"></span>
       <span class="dot dot--green"></span>
-      <span class="terminal-title">torvalds@kernel.org — bash</span>
+      <span class="terminal-title">torvalds@kernel.org — bash — 80×24</span>
     </div>
 
     <div class="hero__body">
-      <p class="hero__prompt"><span class="prompt-sign">$</span> whoami<span class="cursor">▌</span></p>
+      <div class="hero__text">
+        <p class="hero__prompt"><span class="prompt-sign">$</span> whoami<span class="cursor">▌</span></p>
 
-      <h1 class="hero__name">LINUS<br /><span class="hero__name--accent">TORVALDS</span></h1>
+        <h1 class="hero__name">LINUS<br /><span class="hero__name--accent">TORVALDS</span></h1>
 
-      <div class="hero__tags">
-        <span class="tag">LINUX KERNEL</span>
-        <span class="tag">GIT</span>
-        <span class="tag">OPEN SOURCE</span>
-        <span class="tag">FINN</span>
+        <div class="hero__tags">
+          <span class="tag">LINUX KERNEL</span>
+          <span class="tag">GIT</span>
+          <span class="tag">OPEN SOURCE</span>
+          <span class="tag">PROFESSIONAL COMPLAINER</span>
+        </div>
+
+        <p class="hero__born">
+          <span class="label">born</span> 28 Dec 1969 — Helsinki, Finland<br />
+          <span class="label">kernel v0.01</span> 17 Sep 1991 — "just a hobby, won't be big"
+        </p>
       </div>
 
-      <p class="hero__born">
-        <span class="label">born</span> 28.12.1969 — Helsinki, Finland<br />
-        <span class="label">est.</span> Linux 0.01 — 17.09.1991
-      </p>
+      <div class="hero__photo">
+        <div class="photo-frame">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/440px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg"
+            alt="Linus Torvalds at LinuxCon Europe"
+            class="photo-img"
+            loading="lazy"
+          />
+          <div class="photo-caption">
+            <span class="prompt-sign">$</span> identify linus.jpg<br />
+            <span class="photo-caption__data">440×556 · CC-BY-SA · LinuxCon Europe</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="hero__ascii" aria-hidden="true">
@@ -60,13 +77,13 @@
     </div>
     <div class="bio__grid">
       <div class="bio__block bio__block--highlight">
-        <p>Linus Benedict Torvalds ist finnisch-amerikanischer Software-Ingenieur und einer der einflussreichsten Programmierer aller Zeiten. 1991 begann er als Hobbyprojekt den Linux-Kernel zu schreiben — heute läuft er auf über <strong>97 % aller Supercomputer</strong>, dem Android-Ökosystem, der gesamten Cloud-Infrastruktur und Milliarden von Geräten weltweit.</p>
+        <p>Linus Benedict Torvalds is a Finnish-American software engineer and the most influential grumpy person in computing history. In 1991 he started the Linux kernel as a hobby project — it now runs on over <strong>97% of all supercomputers</strong>, the entire Android ecosystem, every cloud data center, and billions of devices worldwide. His hobby got slightly out of hand.</p>
       </div>
       <div class="bio__block">
-        <p>2005 entwickelte er in zwei Wochen <strong>Git</strong>, das heute universell genutzte verteilte Versionskontrollsystem — nachdem er mit den bestehenden Tools unzufrieden war. Typisch Torvalds.</p>
+        <p>In 2005 he rewrote the world's version control system in <strong>two weeks</strong> because he was dissatisfied with the existing tools. He named it <strong>Git</strong>, which is British slang for an unpleasant person. He has stated this was intentional.</p>
       </div>
       <div class="bio__block">
-        <p>Er ist bekannt für seinen kompromisslosen, direkten Stil auf der Linux Kernel Mailing List und die Überzeugung, dass guter Code für sich selbst spricht. <em>"Talk is cheap. Show me the code."</em></p>
+        <p>He is famous for his zero-tolerance policy on bad code, his legendary rants on the Linux Kernel Mailing List, and the firm belief that good code speaks for itself. <em>"Talk is cheap. Show me the code."</em></p>
       </div>
     </div>
   </section>
@@ -74,89 +91,186 @@
   <!-- ═══ QUOTES ═══ -->
   <section class="quotes">
     <div class="section-label">
-      <span class="prompt-sign">$</span> grep -i "torvalds" quotes.db
+      <span class="prompt-sign">$</span> grep -i "torvalds" quotes.db <span id="sort-label" class="comment"># sorted by: chronological</span>
     </div>
 
-    <div class="quotes__grid">
+    <div class="quotes__controls">
+      <button class="sort-btn" id="sort-btn" aria-pressed="false">
+        <span class="prompt-sign">$</span> sort --by=<span id="sort-mode-label">votes</span>
+      </button>
+      <span class="sort-hint">click to rank by community upvotes</span>
+    </div>
 
-      <article class="quote-card quote-card--large">
+    <div class="quotes__grid" id="quotes-grid">
+
+      <article class="quote-card quote-card--large" data-id="q01">
         <div class="quote-card__index">01</div>
+        <div class="quote-card__savagery" title="Savagery Rating">🌶️🌶️</div>
         <blockquote>
           <p class="quote-text">"Talk is cheap. Show me the code."</p>
         </blockquote>
         <div class="quote-card__meta">lkml.org · 2000</div>
+        <div class="quote-card__vote">
+          <button class="vote-btn" data-id="q01" aria-label="Upvote this quote">
+            <span class="vote-btn__arrow">▲</span>
+            <span class="vote-btn__label">UPVOTE</span>
+          </button>
+          <span class="vote-count" data-id="q01">0</span>
+          <span class="vote-unit">pts</span>
+        </div>
       </article>
 
-      <article class="quote-card">
+      <article class="quote-card" data-id="q02">
         <div class="quote-card__index">02</div>
+        <div class="quote-card__savagery" title="Savagery Rating">🌶️🌶️🌶️</div>
         <blockquote>
           <p class="quote-text">"Software is like sex: it's better when it's free."</p>
         </blockquote>
         <div class="quote-card__meta">linus torvalds</div>
+        <div class="quote-card__vote">
+          <button class="vote-btn" data-id="q02" aria-label="Upvote this quote">
+            <span class="vote-btn__arrow">▲</span>
+            <span class="vote-btn__label">UPVOTE</span>
+          </button>
+          <span class="vote-count" data-id="q02">0</span>
+          <span class="vote-unit">pts</span>
+        </div>
       </article>
 
-      <article class="quote-card">
+      <article class="quote-card" data-id="q03">
         <div class="quote-card__index">03</div>
+        <div class="quote-card__savagery" title="Savagery Rating">🌶️</div>
         <blockquote>
           <p class="quote-text">"Intelligence is the ability to avoid doing work, yet getting the work done."</p>
         </blockquote>
         <div class="quote-card__meta">linus torvalds</div>
+        <div class="quote-card__vote">
+          <button class="vote-btn" data-id="q03" aria-label="Upvote this quote">
+            <span class="vote-btn__arrow">▲</span>
+            <span class="vote-btn__label">UPVOTE</span>
+          </button>
+          <span class="vote-count" data-id="q03">0</span>
+          <span class="vote-unit">pts</span>
+        </div>
       </article>
 
-      <article class="quote-card quote-card--accent">
+      <article class="quote-card quote-card--accent" data-id="q04">
         <div class="quote-card__index">04</div>
+        <div class="quote-card__savagery" title="Savagery Rating">🌶️🌶️🌶️</div>
         <blockquote>
           <p class="quote-text">"If Microsoft ever does applications for Linux it means I've won."</p>
         </blockquote>
-        <div class="quote-card__meta">linus torvalds · 1998</div>
+        <div class="quote-card__meta">linus torvalds · 1998 · aged like fine wine</div>
+        <div class="quote-card__vote">
+          <button class="vote-btn" data-id="q04" aria-label="Upvote this quote">
+            <span class="vote-btn__arrow">▲</span>
+            <span class="vote-btn__label">UPVOTE</span>
+          </button>
+          <span class="vote-count" data-id="q04">0</span>
+          <span class="vote-unit">pts</span>
+        </div>
       </article>
 
-      <article class="quote-card quote-card--wide">
+      <article class="quote-card quote-card--wide" data-id="q05">
         <div class="quote-card__index">05</div>
+        <div class="quote-card__savagery" title="Savagery Rating">🌶️🌶️</div>
         <blockquote>
           <p class="quote-text">"Bad programmers worry about the code.<br />Good programmers worry about data structures and their relationships."</p>
         </blockquote>
-        <div class="quote-card__meta">linus torvalds</div>
+        <div class="quote-card__meta">linus torvalds · every code review ever</div>
+        <div class="quote-card__vote">
+          <button class="vote-btn" data-id="q05" aria-label="Upvote this quote">
+            <span class="vote-btn__arrow">▲</span>
+            <span class="vote-btn__label">UPVOTE</span>
+          </button>
+          <span class="vote-count" data-id="q05">0</span>
+          <span class="vote-unit">pts</span>
+        </div>
       </article>
 
-      <article class="quote-card">
+      <article class="quote-card" data-id="q06">
         <div class="quote-card__index">06</div>
+        <div class="quote-card__savagery" title="Savagery Rating">🌶️🌶️🌶️</div>
         <blockquote>
           <p class="quote-text">"An infinite number of monkeys typing into GNU emacs would never make a good program."</p>
         </blockquote>
-        <div class="quote-card__meta">linux newsgroups</div>
+        <div class="quote-card__meta">linux newsgroups · emacs users still coping</div>
+        <div class="quote-card__vote">
+          <button class="vote-btn" data-id="q06" aria-label="Upvote this quote">
+            <span class="vote-btn__arrow">▲</span>
+            <span class="vote-btn__label">UPVOTE</span>
+          </button>
+          <span class="vote-count" data-id="q06">0</span>
+          <span class="vote-unit">pts</span>
+        </div>
       </article>
 
-      <article class="quote-card">
+      <article class="quote-card" data-id="q07">
         <div class="quote-card__index">07</div>
+        <div class="quote-card__savagery" title="Savagery Rating">🌶️🌶️</div>
         <blockquote>
           <p class="quote-text">"Linux is evolution, not intelligent design."</p>
         </blockquote>
-        <div class="quote-card__meta">linus torvalds</div>
+        <div class="quote-card__meta">linus torvalds · darwin would approve</div>
+        <div class="quote-card__vote">
+          <button class="vote-btn" data-id="q07" aria-label="Upvote this quote">
+            <span class="vote-btn__arrow">▲</span>
+            <span class="vote-btn__label">UPVOTE</span>
+          </button>
+          <span class="vote-count" data-id="q07">0</span>
+          <span class="vote-unit">pts</span>
+        </div>
       </article>
 
-      <article class="quote-card quote-card--dark">
+      <article class="quote-card quote-card--dark" data-id="q08">
         <div class="quote-card__index">08</div>
+        <div class="quote-card__savagery" title="Savagery Rating">🌶️</div>
         <blockquote>
           <p class="quote-text">"Most good programmers do programming not because they expect to get paid, but because it is fun to program."</p>
         </blockquote>
-        <div class="quote-card__meta">linus torvalds</div>
+        <div class="quote-card__meta">linus torvalds · your boss disagrees</div>
+        <div class="quote-card__vote">
+          <button class="vote-btn" data-id="q08" aria-label="Upvote this quote">
+            <span class="vote-btn__arrow">▲</span>
+            <span class="vote-btn__label">UPVOTE</span>
+          </button>
+          <span class="vote-count" data-id="q08">0</span>
+          <span class="vote-unit">pts</span>
+        </div>
       </article>
 
-      <article class="quote-card quote-card--wide">
+      <article class="quote-card quote-card--wide" data-id="q09">
         <div class="quote-card__index">09</div>
+        <div class="quote-card__savagery" title="Savagery Rating">🌶️</div>
         <blockquote>
           <p class="quote-text">"I am not a visionary. I'm an engineer. I want to fix the pothole that is right in front of me before I fall in."</p>
         </blockquote>
-        <div class="quote-card__meta">linus torvalds · ted talk · 2016</div>
+        <div class="quote-card__meta">linus torvalds · ted talk · 2016 · 30 years of potholes fixed</div>
+        <div class="quote-card__vote">
+          <button class="vote-btn" data-id="q09" aria-label="Upvote this quote">
+            <span class="vote-btn__arrow">▲</span>
+            <span class="vote-btn__label">UPVOTE</span>
+          </button>
+          <span class="vote-count" data-id="q09">0</span>
+          <span class="vote-unit">pts</span>
+        </div>
       </article>
 
-      <article class="quote-card">
+      <article class="quote-card" data-id="q10">
         <div class="quote-card__index">10</div>
+        <div class="quote-card__savagery" title="Savagery Rating">🌶️🌶️🌶️</div>
         <blockquote>
           <p class="quote-text">"Nobody actually creates perfect code the first time around, except me."</p>
         </blockquote>
-        <div class="quote-card__meta">linus torvalds</div>
+        <div class="quote-card__meta">linus torvalds · no, seriously</div>
+        <div class="quote-card__vote">
+          <button class="vote-btn" data-id="q10" aria-label="Upvote this quote">
+            <span class="vote-btn__arrow">▲</span>
+            <span class="vote-btn__label">UPVOTE</span>
+          </button>
+          <span class="vote-count" data-id="q10">0</span>
+          <span class="vote-unit">pts</span>
+        </div>
       </article>
 
     </div>
@@ -165,33 +279,112 @@
   <!-- ═══ STATS ═══ -->
   <section class="stats">
     <div class="section-label">
-      <span class="prompt-sign">$</span> uname -a
+      <span class="prompt-sign">$</span> uname -a <span class="comment"># fun facts, kernel edition</span>
     </div>
     <div class="stats__grid">
       <div class="stat">
         <span class="stat__num">35+</span>
-        <span class="stat__label">Jahre Linux</span>
+        <span class="stat__label">Years of Linux</span>
       </div>
       <div class="stat">
         <span class="stat__num">30M+</span>
-        <span class="stat__label">Zeilen Kernel-Code</span>
+        <span class="stat__label">Lines of Kernel Code</span>
       </div>
       <div class="stat">
         <span class="stat__num">97%</span>
-        <span class="stat__label">aller Supercomputer</span>
+        <span class="stat__label">of all Supercomputers</span>
       </div>
       <div class="stat">
         <span class="stat__num">1</span>
-        <span class="stat__label">Mensch hinter beiden</span>
+        <span class="stat__label">Finn who changed everything</span>
       </div>
     </div>
   </section>
 
   <!-- ═══ FOOTER ═══ -->
   <footer class="footer">
-    <p class="footer__cmd"><span class="prompt-sign">$</span> echo "Just for fun." <span class="comment"># — Linus Torvalds, Autobiographie 2001</span></p>
-    <p class="footer__copy">© 2026 — Eine Hommage an den Mann, der das Internet zum Laufen bringt.</p>
+    <p class="footer__cmd"><span class="prompt-sign">$</span> echo "Just for fun." <span class="comment"># — Linus Torvalds, autobiography, 2001</span></p>
+    <p class="footer__copy">© 2026 — A tribute to the man who keeps the internet running. Votes stored locally. No servers were harmed.</p>
   </footer>
+
+  <script type="module">
+    import { upvote, getCount, getSortedIds } from './votes.js';
+
+    const grid = document.getElementById('quotes-grid');
+    const sortBtn = document.getElementById('sort-btn');
+    const sortModeLabel = document.getElementById('sort-mode-label');
+    const sortLabel = document.getElementById('sort-label');
+    let sortedByVotes = false;
+
+    // Initialise all vote counts on page load
+    function refreshCounts() {
+      document.querySelectorAll('.vote-count').forEach(el => {
+        el.textContent = getCount(el.dataset.id);
+      });
+    }
+
+    // Disable buttons that have already been voted on this session
+    function restoreVotedState() {
+      const voted = JSON.parse(sessionStorage.getItem('linus-voted') || '[]');
+      voted.forEach(id => {
+        const btn = grid.querySelector(`.vote-btn[data-id="${id}"]`);
+        if (btn) { btn.classList.add('vote-btn--voted'); btn.disabled = true; }
+      });
+    }
+
+    // Re-order cards in the DOM by vote count descending
+    function sortByVotes() {
+      const cards = [...grid.querySelectorAll('.quote-card')];
+      const ids = cards.map(c => c.dataset.id);
+      const sorted = getSortedIds(ids);
+      sorted.forEach(id => {
+        grid.appendChild(grid.querySelector(`[data-id="${id}"]`));
+      });
+    }
+
+    // Reset to original order (q01..q10)
+    function sortByDefault() {
+      const cards = [...grid.querySelectorAll('.quote-card')];
+      cards.sort((a, b) => a.dataset.id.localeCompare(b.dataset.id));
+      cards.forEach(c => grid.appendChild(c));
+    }
+
+    // Vote button handler (delegated)
+    grid.addEventListener('click', e => {
+      const btn = e.target.closest('.vote-btn');
+      if (!btn || btn.disabled) return;
+      const id = btn.dataset.id;
+
+      const newCount = upvote(id);
+      grid.querySelector(`.vote-count[data-id="${id}"]`).textContent = newCount;
+      btn.classList.add('vote-btn--voted');
+      btn.disabled = true;
+
+      // Persist voted state for this session
+      const voted = JSON.parse(sessionStorage.getItem('linus-voted') || '[]');
+      if (!voted.includes(id)) { voted.push(id); sessionStorage.setItem('linus-voted', JSON.stringify(voted)); }
+
+      if (sortedByVotes) sortByVotes();
+    });
+
+    // Sort toggle
+    sortBtn.addEventListener('click', () => {
+      sortedByVotes = !sortedByVotes;
+      sortBtn.setAttribute('aria-pressed', String(sortedByVotes));
+      if (sortedByVotes) {
+        sortModeLabel.textContent = 'votes';
+        sortLabel.textContent = '# sorted by: votes ↓';
+        sortByVotes();
+      } else {
+        sortModeLabel.textContent = 'votes';
+        sortLabel.textContent = '# sorted by: chronological';
+        sortByDefault();
+      }
+    });
+
+    refreshCounts();
+    restoreVotedState();
+  </script>
 
 </body>
 </html>
